@@ -1,0 +1,211 @@
+<div class="header">
+    <img class="str" ng-src="assets/landing/STR.png">
+
+    <div class="menu">
+        <div class="item" ng-repeat="item in landing.itemsMenu">
+            {{item}}
+        </div>
+    </div>
+    <!-- right block-->
+    <div class="right">
+        <img class="avatar" ng-src="assets/landing/avatar.svg"/>
+        <div class="language">RU</div>
+        <div class="buy">купить полис</div>
+        <div class="telephone">+7 727 258 18 00</div>
+    </div>
+</div>
+
+<div class="menuTwoLevel">
+    <div class="container-menu">
+        <div class="item" ng-repeat="item in landing.itemsMenuTwoLevel">
+            {{item}}
+        </div>
+    </div>
+</div>
+
+<!--//cover-->
+<div class="cover">
+    <div class="background"></div>
+    <div class="main">
+        <div class="car-insurance">
+            <div class="title">Автострахование</div>
+            <div class="text">Ситуация на дороге никогда не бывает предсказуемой. Оформите любой из 4-х видов страхования транспортного средства прямо сейчас!</div>
+        </div>
+        <div class="properties">
+            <div class="item" ng-repeat="item in landing.itemsPropertyCover">
+                <div class="caption">{{item.caption}}</div><br>
+                <div class="text">{{item.text}}</div>
+                <div class="button">Раcсчитать</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--calculator-->
+<div class="calculator">
+    <div class="title">Онлайн-заказ</div>
+    <div class="insurance">
+        <span class="title" ng-repeat="item in landing.itemsPropertyCover">{{item.caption}}</span>
+    </div>
+    <div class="progress">
+        <!-- one-->
+        <div class="line"></div>
+        <div class="parent-cycle">
+            <div class="cycle">
+                <div class="paint">1</div>
+                <div class="caption"></div>
+            </div>
+        </div>
+        <!-- block one-->
+        <div class="body">
+            <span class="title">Расчет стоимости полиса </span><br>
+            <div class="block">
+                <div class="item">
+                    <div class="caption">Сколько вам лет?</div>
+                    <div class="button not-selected">младше 25 лет</div>
+                    <div class="button selected">Старше 25 лет</div>
+                </div>
+                <div class="item">
+                    <div class="caption">Стаж вождения</div>
+                    <div class="button">менее 2-х лет</div>
+                    <div class="button">2 года и больше</div>
+                </div>
+                <div class="item">
+                    <div class="caption">ИИН или РНН</div>
+                    <input type="text" class="id-number" placeholder="xxx xxx xxx xxx">
+                </div>
+
+            </div>
+            <div class="block block-right">
+                <div class="item">
+                  <div class="caption">Год регистрации ТС</div>
+
+                  <div class="chose gradient">
+                    <div class="arrow"></div>
+                    <select ng-options="item for item in ['Алматы'] " ng-init="selected='Алматы'" ng-model="selected">
+                      {{item}}
+                    </select>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="caption">Тип ТС</div>
+                  <div class="chose gradient">
+                    <div class="arrow"></div>
+                    <select ng-options="item for item in ['Легковой автомобиль'] " ng-init="selected2='Легковой автомобиль'" ng-model="selected2">
+                      {{item}}
+                    </select>
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="caption">Срок эксплуатации ТС</div>
+                    <div class="button">менее 7-и лет</div>
+                    <div class="button">7 лет и больше</div>
+                </div>
+            </div>
+            <div class="go-to-the-anketa">
+                ПЕРЕЙТИ К АНКЕТЕ
+            </div>
+        </div>
+        <div class="parent-cycle left2">
+            <div class="cycle opacity">
+                <div class="paint">2</div>
+                <div class="caption">Анкетные данные</div>
+            </div>
+        </div>
+        <div class="parent-cycle left">
+            <div class="cycle opacity">
+                <div class="paint">3</div>
+                <div class="caption">Способ оплаты</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--adventages-->
+<div class="adventages">
+    <div class="background"></div>
+    <div class="item" ng-repeat="item in landing.itemsAdventages">
+        <img ng-src="{{item.image}}"><br>
+        <div class="caption">{{item.caption}}</div>
+        <div class="text">{{item.text}}</div>
+    </div>
+</div>
+
+<div class="qa">
+    <span class="title">Полезно знать каждому</span>
+    <ul class="ulList" style="list-style-type:none;">
+        <li ng-repeat="item in landing.itemsQA" >{{item}}</li>
+    </ul>
+    <div class="form">
+        <div class="caption">Произошел страховой случай?</div>
+        <div class="block">
+            <div class="title">Что у вас застраховано?</div>
+            <div class="list {{item.class}}" ng-repeat="item in landing.itemsTypeInsurance">{{item.name}}</div>
+        </div>
+        <div class="block">
+            <div class="title">Ваш телефон</div>
+            <div class="prefix">+7</div>
+            <input type="text" placeholder="Введите свой телефон" class="phone"/>
+        </div>
+
+        <div class="block">
+            <div class="title">Что произошло?</div>
+            <!--<input type="" placeholder="Опишите случай своими словами" class="text"/>-->
+            <textarea class="text" placeholder="Опишите случай своими словами"></textarea>
+        </div>
+
+        <div class="button" >ПОМОГИТЕ МНЕ</div>
+    </div>
+
+</div>
+
+<!--mobile-->
+<div class="mobile">
+    <div class="background"></div>
+    <div class="block">
+        <div class="caption">Агент в кармане</div>
+        <div class="text">Скачайте мобильное приложение, чтобы мгновенно пользоватся услугами компании и управлять своими полисами</div>
+        <div class="market">
+            <div class="button margin32">APPSTORE</div>
+            <div class="button">GOOGLE PLAY</div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="block fix">
+        <div class="caption">Свяжитесь с нами</div>
+        <div class="telephone">+7 727 258 18 00</div>
+        <div class="telephone">+7 727 258 16 70</div>
+        <div class="button">Заказать звонок</div>
+    </div>
+    <div class="block">
+        <div class="caption">Страхование</div>
+
+      <div ng-repeat="item in landing.itemsInsurance">
+        <a class="title" >{{item}}</a>
+        <br>
+      </div>
+      <br>
+    </div>
+    <div class="block">
+        <div class="caption">Полезное</div>
+      <div ng-repeat="item in landing.links">
+        <a class="title" >{{item}}</a>
+      <br>
+      </div>
+    </div>
+
+
+    <div class="block fix">
+        <div class="caption">Следите за нами</div>
+        <img class="link" ng-src="{{item.link}}" ng-style="item.style" ng-href="" class="social" ng-repeat="item in landing.social"></img>
+    </div>
+
+    <div class="bottom">
+        <div class="copyright">© 2016 Страховая компания «STR»</div>
+        <div class="lisence">Лицензия на осуществление страховой деятельности №0000258</div>
+        <img class="logo_rf" ng-src="assets/landing/logo_rf.svg">
+    </div>
+</div>

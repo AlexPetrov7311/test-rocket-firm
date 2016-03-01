@@ -1,0 +1,633 @@
+@width : 1366px;
+@hoverColor : #0F75BC;
+@yellow : #F5E613;
+@grey :#969696;
+@blackOp50 : 1px solid rgba(0, 0, 0, 0.50);
+
+@fontSizeMenu : 14pt;//16
+@fontSizeMenuButton : 12pt;
+@fontSizeMenuTelephone : 22pt;//22
+@fontSizeBigTitle : 55pt;//64
+@fontSizeBigText : 18pt;//20
+@fontSizeTitleProperti : 20pt;//24
+@fontSizeTextProperti : 12pt;//16
+
+
+.header {
+  //width: 100%;
+  height: 90px;
+  background: white;
+  position: relative;
+
+  .str{
+    font-family: AppleSystemUIFont;
+    font-size: 32px;
+    color: #18A4DE;
+    line-height: 38px;
+    position: absolute;
+    left: 84px;
+    top: 26px;
+  }
+
+  .menu{
+    position: absolute;
+    left: 287px;
+    font-size: @fontSizeMenu;
+    .item{
+      color: black;
+      display: inline-block;
+      height: 87px;
+      border-bottom: 3px solid white;
+      line-height: 90px;
+      margin: 0 15px;
+      text-align: center;
+      &:hover{
+        border-bottom: 3px solid #0F75BC;
+        cursor: pointer;
+        color: @hoverColor;
+      }
+    }
+  }
+  .right{
+    float:right;
+    margin: 0 82px;
+    color: @blackOp50;
+    div{
+      margin: 28px 6px;
+      display: inline-block;
+      font-size: @fontSizeMenuButton;
+      padding: 8px 10px;
+      float: right;
+    }
+    .buy{
+      border: @blackOp50;
+      border-radius: 50px;
+    }
+    .language{
+      border: @blackOp50;
+      border-radius: 3px;
+    }
+    .telephone{
+      height: 20px;
+      line-height: 20px;
+      border-bottom: 1px dashed #A7A7A7;
+      font-size: @fontSizeMenuTelephone;
+    }
+    .avatar{
+      padding: 27px 10px;
+      float: right;
+    }
+  }
+
+}
+
+.menuTwoLevel{
+  background: #FAFAFA;
+  height: 60px;
+  box-shadow: inset 0px 10px 8px -10px #CCC;
+  .container-menu{
+    margin-left: 84px;
+    .item{
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      margin-right: 40px;
+      font-size: @fontSizeMenu;
+      float: left;
+      &:hover {
+        color: @hoverColor;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.cover{
+  position: relative;
+  color: white;
+  height: 480px;
+  padding: 80px;
+  background: black;
+  z-index: -1;
+  .background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/landing/road-people-street-smartphone_cut.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1;
+  }
+  .main {
+    .car-insurance {
+      height: 180px;
+      padding-bottom: 50px;
+      .title {
+        font-size: @fontSizeBigTitle;
+      }
+      .text {
+        height: 100px;
+        width: 600px;
+        font-size: @fontSizeBigText;
+      }
+    }
+    .properties {
+      height: 168px;
+      .item {
+        height: inherit;
+        width: 243px;
+        display: inline-block;
+        margin-right: 60px;
+        float: left;
+        .caption {
+          font-size:@fontSizeTitleProperti;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+          float: left;
+        }
+        .text {
+          float: left;
+          font-size:@fontSizeTextProperti;
+          line-height: 22px;
+          min-height: 66px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .button {
+          border: 1px solid white;
+          height: 40px;
+          width: 120px;
+          text-align: center;
+          float: left;
+          line-height: 40px;
+          border-radius: 5px;
+          font-size: 14pt;
+        }
+      }
+    }
+  }
+}
+
+.calculator{
+  padding: 80px;
+
+  .title{
+    font-size: @fontSizeBigTitle;
+  }
+  .insurance{
+    .title{
+      font-size: @fontSizeBigText;
+      padding: 5px 10px;
+      margin: 0 5px;
+      border-radius: 20px;
+      &:hover{
+        background: @yellow;
+        cursor: pointer;
+      }
+    }
+  }
+  .progress{
+    position: relative;
+    padding-top: 40px;
+    overflow: hidden;
+    .line{
+      position: absolute;
+      border: 1px solid black;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.1;
+    }
+    .parent-cycle {
+      position: relative;
+      display: inline-block;
+      float: left;
+      height: 80px;
+      width: 80px;
+      padding: 0 20px;
+      background: white;
+      .cycle {
+        background: white;
+        height: 80px;
+        width: 80px;
+        border: 1px solid black;
+        border-radius: 40px;
+        line-height: 80px;
+        text-align: center;
+        cursor: pointer;
+        .paint {
+          font-size: @fontSizeTitleProperti;
+        }
+        .caption {
+          line-height: normal;
+          padding: 10px 0;
+        }
+      }
+    }
+    .left{
+      margin-left: 75px;
+    }
+    .left2{
+      margin-left: 30px;
+    }
+    .opacity{
+      opacity: 0.5;
+
+    }
+    .body{
+      display: inline-block;
+      float: left;
+      width: 815px;
+      .title{
+        font-size: 32px;
+        background: white;
+        line-height: 80px;
+      }
+      .block-right{
+        margin-left: 100px;
+      }
+      .block{
+        width: 333px;
+        display: inline-block;
+        float: left;
+        .item{
+          width: 333px;
+          display: inline-block;
+          float: left;
+          height: 70px;
+          margin-top: 30px;
+          .caption{
+            font-size: 20px;
+          }
+          font-size: 16px;
+          .button{
+            height: 40px;
+            width: 157px;
+            background: #FAFAFA;
+            display: inline-block;
+            float: left;
+            line-height: 40px;
+            text-align: center;
+            margin: 2px 7px 2px 0;
+            border-radius: 5px;
+            border: 1px dashed darkgrey;
+            cursor: pointer;
+          }
+          .selected{
+            background: @yellow;
+            cursor: default;
+            border-color: @yellow;
+          }
+          input[type="text"]{
+            background: inherit;
+            height: 40px;
+            border: 1px solid darkgray;
+            font-size: 16px;
+            border-radius: 5px;
+            width: calc(~"100% - 31px");
+            margin: 2px 7px 2px 0;
+            padding: 0 10px;
+          }
+
+          .id-number{
+
+          }
+
+          .chose{
+            width: 286px;
+            height: 40px;
+            overflow: hidden;
+            margin: 2px 7px 2px 0;
+            //z-index: -2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+            .gradient(@startColor: white, @endColor: #eee);
+            .arrow{
+              position: absolute;
+              height: inherit;
+              right: 15px;
+              width: 12px;
+              background-image: url('../assets/landing/arrow.svg');
+              background-repeat: no-repeat;
+              background-position-Y: 17px;
+            }
+            select {
+              height: 40px;
+              cursor: pointer;
+              //position: relative;
+              opacity: .99;
+              z-index: 1;
+              background: transparent;
+              //background: black;
+              width: inherit;
+              padding: 5px;
+              font-size: 16px;
+              line-height: 1;
+              border: 0;
+              border-radius: 0;
+
+              -webkit-appearance: none;
+            }
+          }
+        }
+      }
+      .go-to-the-anketa{
+        display: inline-block;
+        margin: 50px 0;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        width: 240px;
+        background-repeat: no-repeat;
+        background-image: url('../assets/landing/button.svg');
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+
+
+.adventages{
+  position: relative;
+  color: white;
+  height: 400px;
+  padding: 80px;
+  background: black;
+  z-index: -1;
+  .background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/landing/road-sun.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1;
+  }
+  .item{
+    display: inline-block;
+    float: left;
+    width: 290px;
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 110px;
+
+    img{
+      padding: 32px;
+    }
+    .caption{
+        font-size: 24pt;
+    }
+    .text{
+      margin-top: 12px;
+      font-size: 13pt;
+
+    }
+  }
+}
+
+.qa{
+  position: relative;
+  height: 367px;
+  margin: 100px 80px;
+  .title{
+    margin-top: 100px;
+    font-size: 54pt;
+  }
+  .ulList{
+    padding-left: 0;
+    font-size: 20pt;
+    line-height: 44px;
+  }
+  .form{
+    display: block;
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 327px;
+    padding: 30px;
+    background: white;
+    .box-shadow(@string:0px 2px 1px 3px #EAEAEA);
+    .caption{
+      font-size: 26pt;
+    }
+    .block{
+      font-size: 16pt;
+      margin-top: 20px;
+      overflow: hidden;
+      .title{
+        margin-top: 0;
+        font-size: 16pt;
+      }
+      .list {
+        color: @grey;
+        height: 40px;
+        background: white;
+        display: inline-block;
+        float: left;
+        line-height: 40px;
+        text-align: center;
+        margin: 5px 7px 5px 0;
+        padding: 0 24px;
+        border-radius: 5px;
+        border: 1px dashed darkgrey;
+        cursor: pointer;
+      }
+      .selected{
+        background: @yellow;
+        cursor: default;
+        border-color: @yellow;
+        color: black;
+      }
+
+
+      .prefix{
+        color:@grey;
+        display: inline-block;
+        height: 42px;
+        width: 50px;
+        line-height: 42px;
+        text-align: center;
+        border: 1px solid @grey;
+        border-radius: 5px;
+        margin: 5px 0;
+        margin-right: 12px;
+        float: left;
+      }
+      .phone{
+        color:@grey;
+        display: inline-block;
+        width: 225px;
+        height: 42px;
+        line-height: 42px;
+        float: left;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: 1px solid @grey;
+        font-size: 16px;
+        padding: 0 16px;
+
+      }
+      .text{
+        width: 285px;
+        height: 105px;
+        border-radius: 5px;
+        border: 1px solid @grey;
+        resize: none;
+        padding: 9px 18px;
+        font-size: 16px;
+      }
+
+    }
+    .button{
+      display: inline-block;
+      margin: 20px 0;
+      height: 46px;
+      line-height: 50px;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      width: 191px;
+      background-repeat: no-repeat;
+      background-image: url('../assets/landing/button-fone.svg');
+      cursor: pointer;
+    }
+  }
+}
+
+.mobile{
+  position: relative;
+  color: white;
+  height: 640px;
+  padding: 80px;
+  z-index: -1;
+  .background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/landing/phone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .block{
+    margin: 100px 80px;
+    width: 443px;
+    .caption{
+      font-size: 54px;
+    }
+    .text{
+      margin-top: 24px;
+      font-size: 25px;
+      line-height: 24pt;
+    }
+    .market{
+      margin-top:32px;
+      .button{
+        display: inline-block;
+        float: left;
+        background-repeat: no-repeat;
+        background-image: url('../assets/landing/button-fone.svg');
+        background-size: cover;
+        width: 180px;
+        text-align: center;
+        border-radius: 5px;
+        height: 51px;
+        line-height: 51px;
+
+      }
+      .margin32{
+        margin-right: 32px;
+      }
+    }
+  }
+}
+
+.footer{
+  margin: 54px 83px;
+  overflow: hidden;
+
+  .block{
+    display: inline-block;
+    margin-right: 58px;
+    float: left;
+    width: 269px;
+    min-height: 164px;
+    .caption{
+      font-size: 12pt;
+      margin-bottom: 12pt;
+    }
+    .telephone{
+      font-size: 22pt;
+      margin-bottom: 6pt;
+
+    }
+    .button{
+      width: 180px;
+      height: 46px;
+      line-height: 46px;
+      font-size: 16pt;
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid @grey;
+      cursor: pointer;
+    }
+    .title{
+      font-size: 16pt;
+      border-bottom: 1px solid @grey;
+      line-height: 20pt;
+    }
+    .link{
+      margin-right: 10px;
+    }
+
+  }
+  .fix{
+    width: 240px;
+  }
+  .bottom{
+    display: block;
+    float: left;
+    margin-top: 54px;
+    color: @grey;
+    font-size: 12pt;
+    position: relative;
+    width: 100%;
+    div{
+      display: inline-block;
+
+    }
+    .copyright{
+      margin-right: 50px;
+    }
+    .lisence{
+
+    }
+    .logo_rf{
+      position: absolute;
+      right: 200px;
+      top: 0;
+      display: inline-block;
+      float: right;
+    }
+  }
+}

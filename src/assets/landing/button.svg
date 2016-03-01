@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="239px" height="50px" viewBox="0 0 239 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#18A4DE" offset="0%"></stop>
+            <stop stop-color="#0F76BD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="product" sketch:type="MSArtboardGroup" transform="translate(-190.000000, -1463.000000)" fill="url(#linearGradient-1)">
+            <g id="calculator" sketch:type="MSLayerGroup" transform="translate(0.000000, 790.000000)">
+                <g id="button" transform="translate(190.000000, 673.000000)" sketch:type="MSShapeGroup">
+                    <path d="M0,2.99653242 C0,1.34159326 1.33551684,0.00599896791 2.99954592,0.0134735701 L219.624888,0.98652643 C221.281492,0.993967677 223.427646,2.08505891 224.410367,3.41261714 L238.214067,22.0600391 C239.200411,23.3924908 239.219653,25.5741944 238.27044,26.9141019 L224.353994,46.5585527 C223.398785,47.9069259 221.288918,49.0059973 219.624888,49.0134719 L2.99954592,49.9865264 C1.34294245,49.9939677 0,48.6626208 0,47.0034676 L0,2.99653242 Z" id="bg"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
